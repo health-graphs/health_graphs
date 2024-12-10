@@ -30,8 +30,7 @@
 <div id="cookies-eu-banner" style="display: none;">
     By continuing to visit this site, you accept the use of cookies by Google Analytics for statistical purposes.
     <a href="imprints.html" id="cookies-eu-more">Read more</a>
-    <button id="cookies-eu-reject">Reject</button>
-    <button id="cookies-eu-accept">Accept</button>
+    <button id="cookies-eu-accept">Got it!</button>
 </div>
 
 
@@ -125,13 +124,14 @@
 <script src="assets/js/cookies-eu-banner.js"></script>
 <script>
     new CookiesEuBanner(function () {
-        // Google Analytics 4 Integration
+        // Automatically initialize Google Analytics
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
-        // Use your GA4 Measurement ID here
-        gtag('config', 'G-CR7CV6WC8Y');
+        gtag('config', 'G-CR7CV6WC8Y'); // Replace with your GA4 Measurement ID
+    }, {
+        position: 'bottom', // Display the banner at the bottom of the page
+        cookiePolicyUrl: './imprints.html', // Link to the cookie policy
     });
 </script>
 </body>

@@ -15,3 +15,10 @@
     height: 100%;
     border: none;
 }
+
+/* Media query for devices with a width less than 600px */
+@media (max-width: 600px) {
+    .responsive-iframe-container {
+        padding-top: 75%;  /* Changes to 4:3 Aspect Ratio for smaller screens */
+    }
+}
